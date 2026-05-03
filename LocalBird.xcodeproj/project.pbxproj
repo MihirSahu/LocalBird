@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* LocalBirdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* LocalBirdApp.swift */; };
+		100000000000000000000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* AppState.swift */; };
+		100000000000000000000003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* Models.swift */; };
+		100000000000000000000004 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* ContentView.swift */; };
+		100000000000000000000005 /* MenuBarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* MenuBarContent.swift */; };
+		100000000000000000000006 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* SettingsView.swift */; };
+		100000000000000000000007 /* SQLiteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* SQLiteStore.swift */; };
+		100000000000000000000008 /* LocalBirdPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* LocalBirdPaths.swift */; };
+		100000000000000000000009 /* ImageHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* ImageHasher.swift */; };
+		10000000000000000000000A /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000A /* OCRService.swift */; };
+		10000000000000000000000B /* MetadataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000B /* MetadataService.swift */; };
+		10000000000000000000000C /* CaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000C /* CaptureController.swift */; };
+		10000000000000000000000D /* ActivityBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000D /* ActivityBlockBuilder.swift */; };
+		10000000000000000000000E /* RoutinePacketGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000E /* RoutinePacketGenerator.swift */; };
+		10000000000000000000000F /* OpencodeRoutineSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000F /* OpencodeRoutineSummarizer.swift */; };
+		100000000000000000000010 /* RoutineRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000010 /* RoutineRunner.swift */; };
+		100000000000000000000014 /* FilenameSlug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000016 /* FilenameSlug.swift */; };
+		100000000000000000000011 /* ScreenCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200000000000000000000011 /* ScreenCaptureKit.framework */; };
+		100000000000000000000012 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200000000000000000000012 /* Vision.framework */; };
+		100000000000000000000013 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 200000000000000000000013 /* libsqlite3.tbd */; };
+		100000000000000000000201 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* Models.swift */; };
+		100000000000000000000202 /* SQLiteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* SQLiteStore.swift */; };
+		100000000000000000000203 /* LocalBirdPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* LocalBirdPaths.swift */; };
+		100000000000000000000204 /* ImageHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* ImageHasher.swift */; };
+		100000000000000000000205 /* ActivityBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000D /* ActivityBlockBuilder.swift */; };
+		100000000000000000000206 /* RoutinePacketGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000E /* RoutinePacketGenerator.swift */; };
+		100000000000000000000207 /* OpencodeRoutineSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000F /* OpencodeRoutineSummarizer.swift */; };
+		100000000000000000000208 /* FilenameSlug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000016 /* FilenameSlug.swift */; };
+		100000000000000000000209 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 200000000000000000000013 /* libsqlite3.tbd */; };
+		100000000000000000000101 /* SQLiteStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000101 /* SQLiteStoreTests.swift */; };
+		100000000000000000000102 /* ActivityBlockBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000102 /* ActivityBlockBuilderTests.swift */; };
+		100000000000000000000103 /* ImageHasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000103 /* ImageHasherTests.swift */; };
+		100000000000000000000104 /* RoutinePacketGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000104 /* RoutinePacketGeneratorTests.swift */; };
+		100000000000000000000105 /* OpencodeRoutineSummarizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000105 /* OpencodeRoutineSummarizerTests.swift */; };
+		100000000000000000000106 /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000106 /* TestSupport.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		300000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000001;
+			remoteInfo = LocalBird;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		200000000000000000000001 /* LocalBirdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBirdApp.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* MenuBarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarContent.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* SQLiteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteStore.swift; sourceTree = "<group>"; };
+		200000000000000000000008 /* LocalBirdPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBirdPaths.swift; sourceTree = "<group>"; };
+		200000000000000000000009 /* ImageHasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHasher.swift; sourceTree = "<group>"; };
+		20000000000000000000000A /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		20000000000000000000000B /* MetadataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataService.swift; sourceTree = "<group>"; };
+		20000000000000000000000C /* CaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureController.swift; sourceTree = "<group>"; };
+		20000000000000000000000D /* ActivityBlockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBlockBuilder.swift; sourceTree = "<group>"; };
+		20000000000000000000000E /* RoutinePacketGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinePacketGenerator.swift; sourceTree = "<group>"; };
+		20000000000000000000000F /* OpencodeRoutineSummarizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpencodeRoutineSummarizer.swift; sourceTree = "<group>"; };
+		200000000000000000000010 /* RoutineRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineRunner.swift; sourceTree = "<group>"; };
+		200000000000000000000016 /* FilenameSlug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilenameSlug.swift; sourceTree = "<group>"; };
+		200000000000000000000011 /* ScreenCaptureKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenCaptureKit.framework; path = System/Library/Frameworks/ScreenCaptureKit.framework; sourceTree = SDKROOT; };
+		200000000000000000000012 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		200000000000000000000013 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.text-based-dylib-definition; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		200000000000000000000014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200000000000000000000015 /* LocalBird.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalBird.entitlements; sourceTree = "<group>"; };
+		200000000000000000000101 /* SQLiteStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteStoreTests.swift; sourceTree = "<group>"; };
+		200000000000000000000102 /* ActivityBlockBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBlockBuilderTests.swift; sourceTree = "<group>"; };
+		200000000000000000000103 /* ImageHasherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHasherTests.swift; sourceTree = "<group>"; };
+		200000000000000000000104 /* RoutinePacketGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinePacketGeneratorTests.swift; sourceTree = "<group>"; };
+		200000000000000000000105 /* OpencodeRoutineSummarizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpencodeRoutineSummarizerTests.swift; sourceTree = "<group>"; };
+		200000000000000000000106 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
+		600000000000000000000001 /* LocalBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		600000000000000000000002 /* LocalBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		700000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000011 /* ScreenCaptureKit.framework in Frameworks */,
+				100000000000000000000012 /* Vision.framework in Frameworks */,
+				100000000000000000000013 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000209 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		800000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				800000000000000000000002 /* LocalBird */,
+				800000000000000000000006 /* LocalBirdTests */,
+				800000000000000000000007 /* Frameworks */,
+				800000000000000000000008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		800000000000000000000002 /* LocalBird */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* LocalBirdApp.swift */,
+				200000000000000000000002 /* AppState.swift */,
+				200000000000000000000003 /* Models.swift */,
+				800000000000000000000003 /* UI */,
+				800000000000000000000004 /* Services */,
+				800000000000000000000005 /* Storage */,
+				200000000000000000000014 /* Info.plist */,
+				200000000000000000000015 /* LocalBird.entitlements */,
+			);
+			path = LocalBird;
+			sourceTree = "<group>";
+		};
+		800000000000000000000003 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000004 /* ContentView.swift */,
+				200000000000000000000005 /* MenuBarContent.swift */,
+				200000000000000000000006 /* SettingsView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		800000000000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000008 /* LocalBirdPaths.swift */,
+				200000000000000000000009 /* ImageHasher.swift */,
+				200000000000000000000016 /* FilenameSlug.swift */,
+				20000000000000000000000A /* OCRService.swift */,
+				20000000000000000000000B /* MetadataService.swift */,
+				20000000000000000000000C /* CaptureController.swift */,
+				20000000000000000000000D /* ActivityBlockBuilder.swift */,
+				20000000000000000000000E /* RoutinePacketGenerator.swift */,
+				20000000000000000000000F /* OpencodeRoutineSummarizer.swift */,
+				200000000000000000000010 /* RoutineRunner.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		800000000000000000000005 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000007 /* SQLiteStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		800000000000000000000006 /* LocalBirdTests */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000101 /* SQLiteStoreTests.swift */,
+				200000000000000000000102 /* ActivityBlockBuilderTests.swift */,
+				200000000000000000000103 /* ImageHasherTests.swift */,
+				200000000000000000000104 /* RoutinePacketGeneratorTests.swift */,
+				200000000000000000000105 /* OpencodeRoutineSummarizerTests.swift */,
+				200000000000000000000106 /* TestSupport.swift */,
+			);
+			path = LocalBirdTests;
+			sourceTree = "<group>";
+		};
+		800000000000000000000007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000011 /* ScreenCaptureKit.framework */,
+				200000000000000000000012 /* Vision.framework */,
+				200000000000000000000013 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		800000000000000000000008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				600000000000000000000001 /* LocalBird.app */,
+				600000000000000000000002 /* LocalBirdTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* LocalBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900000000000000000000101 /* Build configuration list for PBXNativeTarget "LocalBird" */;
+			buildPhases = (
+				A00000000000000000000001 /* Sources */,
+				700000000000000000000001 /* Frameworks */,
+				A00000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocalBird;
+			productName = LocalBird;
+			productReference = 600000000000000000000001 /* LocalBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+		500000000000000000000002 /* LocalBirdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900000000000000000000102 /* Build configuration list for PBXNativeTarget "LocalBirdTests" */;
+			buildPhases = (
+				A00000000000000000000003 /* Sources */,
+				700000000000000000000002 /* Frameworks */,
+				A00000000000000000000004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B000000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = LocalBirdTests;
+			productName = LocalBirdTests;
+			productReference = 600000000000000000000002 /* LocalBirdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		400000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					500000000000000000000001 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					500000000000000000000002 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 500000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = 900000000000000000000001 /* Build configuration list for PBXProject "LocalBird" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 800000000000000000000001;
+			productRefGroup = 800000000000000000000008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500000000000000000000001 /* LocalBird */,
+				500000000000000000000002 /* LocalBirdTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* LocalBirdApp.swift in Sources */,
+				100000000000000000000002 /* AppState.swift in Sources */,
+				100000000000000000000003 /* Models.swift in Sources */,
+				100000000000000000000004 /* ContentView.swift in Sources */,
+				100000000000000000000005 /* MenuBarContent.swift in Sources */,
+				100000000000000000000006 /* SettingsView.swift in Sources */,
+				100000000000000000000007 /* SQLiteStore.swift in Sources */,
+				100000000000000000000008 /* LocalBirdPaths.swift in Sources */,
+				100000000000000000000009 /* ImageHasher.swift in Sources */,
+				10000000000000000000000A /* OCRService.swift in Sources */,
+				10000000000000000000000B /* MetadataService.swift in Sources */,
+				10000000000000000000000C /* CaptureController.swift in Sources */,
+				10000000000000000000000D /* ActivityBlockBuilder.swift in Sources */,
+				10000000000000000000000E /* RoutinePacketGenerator.swift in Sources */,
+				10000000000000000000000F /* OpencodeRoutineSummarizer.swift in Sources */,
+				100000000000000000000010 /* RoutineRunner.swift in Sources */,
+				100000000000000000000014 /* FilenameSlug.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000101 /* SQLiteStoreTests.swift in Sources */,
+				100000000000000000000102 /* ActivityBlockBuilderTests.swift in Sources */,
+				100000000000000000000103 /* ImageHasherTests.swift in Sources */,
+				100000000000000000000104 /* RoutinePacketGeneratorTests.swift in Sources */,
+				100000000000000000000105 /* OpencodeRoutineSummarizerTests.swift in Sources */,
+				100000000000000000000106 /* TestSupport.swift in Sources */,
+				100000000000000000000201 /* Models.swift in Sources */,
+				100000000000000000000202 /* SQLiteStore.swift in Sources */,
+				100000000000000000000203 /* LocalBirdPaths.swift in Sources */,
+				100000000000000000000204 /* ImageHasher.swift in Sources */,
+				100000000000000000000205 /* ActivityBlockBuilder.swift in Sources */,
+				100000000000000000000206 /* RoutinePacketGenerator.swift in Sources */,
+				100000000000000000000207 /* OpencodeRoutineSummarizer.swift in Sources */,
+				100000000000000000000208 /* FilenameSlug.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B000000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500000000000000000000001 /* LocalBird */;
+			targetProxy = 300000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C000000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C000000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C000000000000000000000101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LocalBird/LocalBird.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LocalBird/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihirsahu.LocalBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C000000000000000000000102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LocalBird/LocalBird.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LocalBird/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihirsahu.LocalBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C000000000000000000000201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihirsahu.LocalBirdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C000000000000000000000202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihirsahu.LocalBirdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		900000000000000000000001 /* Build configuration list for PBXProject "LocalBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C000000000000000000000001 /* Debug */,
+				C000000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900000000000000000000101 /* Build configuration list for PBXNativeTarget "LocalBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C000000000000000000000101 /* Debug */,
+				C000000000000000000000102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900000000000000000000102 /* Build configuration list for PBXNativeTarget "LocalBirdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C000000000000000000000201 /* Debug */,
+				C000000000000000000000202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 400000000000000000000001 /* Project object */;
+}
